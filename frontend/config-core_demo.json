@@ -47,6 +47,8 @@
     "defaultFacilityUrl": ""
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#005d5d"
+    "Brand color #1": "#2d368e",
+    "Brand color #2": "#6568aa",
+    "Brand color #3": "#2d368e"
   }
 }

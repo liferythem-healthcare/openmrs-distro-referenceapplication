@@ -8,10 +8,11 @@ services:
       - frontend
       - backend
     ports:
-      - "81:80"
+      - "80:80"
 
   frontend:
-    image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
+    # image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
+    image: liferythem/liferythem_frontend:tag_2
     restart: "unless-stopped"
     environment:
       SPA_PATH: /openmrs/spa
@@ -26,6 +27,7 @@ services:
 
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
+    # image: anish443/opback
     restart: "unless-stopped"
     depends_on:
       - db
